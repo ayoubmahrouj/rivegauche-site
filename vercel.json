@@ -1,0 +1,67 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/transfers",
+      "destination": "/marrakech-airport-transfer",
+      "permanent": true
+    },
+    {
+      "source": "/transferts",
+      "destination": "/fr/transfert-aeroport-marrakech",
+      "permanent": true
+    },
+    {
+      "source": "/pricing",
+      "destination": "/excursions",
+      "permanent": true
+    },
+    {
+      "source": "/tarifs",
+      "destination": "/fr/excursions",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/cart",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/terms",
+      "destination": "/privacy",
+      "permanent": false
+    },
+    {
+      "source": "/excursions/merzouga",
+      "destination": "/excursions/merzouga-desert-3days",
+      "permanent": true
+    },
+    {
+      "source": "/excursions/marrakech-city-tour",
+      "destination": "/excursions/marrakech-medina",
+      "permanent": true
+    },
+    {
+      "source": "/excursions/al-haouz-imlil-three-valleys",
+      "destination": "/excursions/imlil-valley",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ]
+}
